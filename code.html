@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Value Prime Cars - Luxury for Less</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#C5A059", // Champagne Gold
+                        "primary-dark": "#B08D45",
+                        "background-light": "#FAF9F6", // Soft Ivory
+                        "background-dark": "#1C1C1E", // Dark Gray for Dark Mode
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#2C2C2E",
+                        "text-main-light": "#1A1A1A",
+                        "text-main-dark": "#E5E5E5",
+                        "text-sub-light": "#555555",
+                        "text-sub-dark": "#A1A1AA",
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        body: ["Lato", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'gold': '0 4px 14px 0 rgba(197, 160, 89, 0.39)',
+                        'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .dark .glass-panel {
+            background: rgba(44, 44, 46, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glass-panel-deep {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+        .dark .glass-panel-deep {
+            background: rgba(30, 30, 32, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }.faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        details[open] .faq-answer {
+            max-height: 200px;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark transition-colors duration-300 antialiased">
+<nav class="fixed w-full z-50 transition-all duration-300 glass-panel shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+<img alt="Value Prime Logo" class="h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ6n6B5Mq14LX08biRdmvPK4OOKIQ8eeE0ZbtB5hRxuK2cEauDLoQJ6ZHyNxNa1yy1Mo7SHX1j3s5YgDOMAOq3I313i7bbX7xrW9BkProxMwWEuTvG8BCtzmH8BFPqDQo1b-H0T4Sk4U8E70mEp5GLJljMf84d7RYTG2vZYVJm-b1WrNSsfwAhzvwJK5wbZhskc3S_WHw5chOjkHKNfAbmwIwcDVg1zW6qxDxiNNQVfCkmWmx47n4l5aDJjuNEsSMGjAhg9Rs0COc"/>
+<span class="font-display font-bold text-2xl tracking-wide text-gray-900 dark:text-white">Value Prime</span>
+</div>
+<div class="flex items-center">
+<a class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full transition-all shadow-gold font-medium flex items-center gap-2 relative overflow-hidden group" href="#booking-form">
+<span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
+<span class="material-symbols-outlined text-sm">calendar_month</span> Book Now
+                </a>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="White premium sedan parked outside a modern minimalist hotel in daylight" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_P__b_yEvUQ4sAtAAlJ-whNtBerC7uUyDqhFK7I-Xh0w-qZrk734ptepClOrN_nJpiET3CTiMXg0v-uLeKk02LbDX4Bz4SwVKtaPMdzpz0AI0PUjnomboFzYu-NK8Qi3yz_R4CUe7BsCr6YghHtKx_b736EpzFI6ETBfJqI9XPL6DRycXdsvzBBPqYN1ZvnEJiszUExWug6Lj3_Rg1qa8YosZar86ZFmDm7wnE2wmpX9tBT1zGPAhSemW9ufDiMGQyFHZIYiSM6E"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background-light/95 via-background-light/70 to-transparent dark:from-background-dark/95 dark:via-background-dark/80 dark:to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2 space-y-6 pt-10 md:pt-0">
+<div class="inline-block px-3 py-1 border border-primary text-primary rounded-full text-xs font-bold tracking-widest uppercase mb-2 bg-white/50 dark:bg-black/20 backdrop-blur-sm shadow-sm">
+                Premium Value. Unmatched Service.
+            </div>
+<h1 class="text-5xl md:text-7xl font-display font-bold text-gray-900 dark:text-white leading-tight drop-shadow-sm">
+                Luxury for <span class="italic text-primary relative inline-block">Less.
+                    <span class="absolute -bottom-2 left-0 w-full h-1 bg-primary/30 rounded-full"></span>
+</span>
+</h1>
+<p class="text-lg md:text-xl text-text-sub-light dark:text-text-sub-dark max-w-md font-light leading-relaxed">
+                Why overpay for luxury? Drive premium sedans like the Verna, Virtus, and SUVs like the Fortuner at unbeatable rates.
+            </p>
+<div class="bg-white/60 dark:bg-surface-dark/60 backdrop-blur-md border border-primary/20 rounded-xl p-4 flex flex-wrap gap-4 items-center mt-6 shadow-soft">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">sanitizer</span>
+<span class="text-xs font-bold uppercase tracking-wider text-gray-800 dark:text-gray-200">Sanitized Cars</span>
+</div>
+<div class="w-px h-4 bg-gray-300 dark:bg-gray-600 hidden sm:block"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">badge</span>
+<span class="text-xs font-bold uppercase tracking-wider text-gray-800 dark:text-gray-200">Pro Drivers</span>
+</div>
+<div class="w-px h-4 bg-gray-300 dark:bg-gray-600 hidden sm:block"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">support_agent</span>
+<span class="text-xs font-bold uppercase tracking-wider text-gray-800 dark:text-gray-200">24/7 Support</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-6">
+<a class="px-8 py-3.5 bg-primary text-white font-medium rounded-full shadow-gold hover:bg-primary-dark transition-all text-center flex items-center justify-center gap-2 transform hover:-translate-y-0.5" href="#fleet">
+                    View Value Fleet <span class="material-symbols-outlined text-sm">arrow_downward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex justify-center md:justify-end" id="booking-form">
+<div class="glass-panel p-8 rounded-2xl w-full max-w-md shadow-soft border-t-4 border-primary relative overflow-hidden">
+<div class="absolute top-2 right-2 flex items-center gap-1.5 bg-red-50 text-red-600 px-2 py-1 rounded text-[10px] font-bold border border-red-100 animate-pulse">
+<span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+    Real-time Booking Active
+</div>
+<h3 class="text-2xl font-display font-bold mb-2 text-gray-800 dark:text-white">Book Your Ride</h3>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark mb-6">Best rates guaranteed. No hidden fees.</p>
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-xs uppercase tracking-wider text-text-sub-light dark:text-text-sub-dark mb-1 font-bold">Pick Up</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-gray-400 text-sm">location_on</span>
+<input class="w-full bg-white dark:bg-black/30 border border-gray-200 dark:border-gray-600 rounded-lg pl-9 pr-4 py-3 text-sm focus:ring-primary focus:border-primary dark:text-white shadow-sm" placeholder="City or Airport" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-xs uppercase tracking-wider text-text-sub-light dark:text-text-sub-dark mb-1 font-bold">Drop Off</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-gray-400 text-sm">flag</span>
+<input class="w-full bg-white dark:bg-black/30 border border-gray-200 dark:border-gray-600 rounded-lg pl-9 pr-4 py-3 text-sm focus:ring-primary focus:border-primary dark:text-white shadow-sm" placeholder="Destination" type="text"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-xs uppercase tracking-wider text-text-sub-light dark:text-text-sub-dark mb-1 font-bold">Date &amp; Time</label>
+<div class="relative">
+<input class="w-full bg-white dark:bg-black/30 border border-gray-200 dark:border-gray-600 rounded-lg px-4 py-3 text-sm focus:ring-primary focus:border-primary dark:text-white shadow-sm" type="datetime-local"/>
+</div>
+</div>
+<div>
+<label class="block text-xs uppercase tracking-wider text-text-sub-light dark:text-text-sub-dark mb-1 font-bold">Select Preference</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="border border-primary bg-primary/10 text-primary text-xs font-bold py-2 rounded hover:bg-primary hover:text-white transition-colors" type="button">Sedan</button>
+<button class="border border-gray-200 text-gray-500 text-xs font-bold py-2 rounded hover:border-primary hover:text-primary transition-colors" type="button">SUV</button>
+<button class="border border-gray-200 text-gray-500 text-xs font-bold py-2 rounded hover:border-primary hover:text-primary transition-colors" type="button">Outstation</button>
+</div>
+</div>
+<button class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold py-4 rounded-lg mt-4 hover:opacity-90 transition-opacity flex justify-center items-center gap-2 shadow-lg" type="submit">
+                        Check Availability &amp; Prices <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</header>
+<section class="py-20 bg-surface-light dark:bg-surface-dark relative">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Why Choose Us</span>
+<h2 class="text-3xl md:text-4xl font-display text-gray-900 dark:text-white mb-4">Value Prime vs. <span class="italic text-gray-400">Standard Rentals</span></h2>
+<p class="text-text-sub-light dark:text-text-sub-dark max-w-2xl mx-auto">See why smart travelers are switching to Value Prime. More value, less compromise.</p>
+</div>
+<div class="overflow-x-auto">
+<div class="glass-panel-deep rounded-2xl p-2 md:p-6 max-w-4xl mx-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-gray-200 dark:border-gray-700">
+<th class="p-4 text-sm uppercase tracking-wider font-bold text-gray-500 w-1/3">Feature</th>
+<th class="p-4 text-sm uppercase tracking-wider font-bold text-primary w-1/3 bg-primary/5 rounded-t-lg text-center">Value Prime</th>
+<th class="p-4 text-sm uppercase tracking-wider font-bold text-gray-400 w-1/3 text-center">Regular Taxis</th>
+</tr>
+</thead>
+<tbody class="text-sm">
+<tr class="border-b border-gray-100 dark:border-gray-800">
+<td class="p-4 font-bold text-gray-800 dark:text-white">Car Condition</td>
+<td class="p-4 text-center bg-primary/5 font-medium text-gray-900 dark:text-white">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-lg">check_circle</span> Premium &amp; Sanitized
+                                </div>
+</td>
+<td class="p-4 text-center text-gray-500">Often Unclean</td>
+</tr>
+<tr class="border-b border-gray-100 dark:border-gray-800">
+<td class="p-4 font-bold text-gray-800 dark:text-white">Driver Quality</td>
+<td class="p-4 text-center bg-primary/5 font-medium text-gray-900 dark:text-white">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-lg">check_circle</span> Uniformed &amp; Verified
+                                </div>
+</td>
+<td class="p-4 text-center text-gray-500">Inconsistent</td>
+</tr>
+<tr class="border-b border-gray-100 dark:border-gray-800">
+<td class="p-4 font-bold text-gray-800 dark:text-white">Pricing Model</td>
+<td class="p-4 text-center bg-primary/5 font-medium text-gray-900 dark:text-white">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-lg">check_circle</span> Transparent &amp; Fixed
+                                </div>
+</td>
+<td class="p-4 text-center text-gray-500">Surge Pricing</td>
+</tr>
+<tr>
+<td class="p-4 font-bold text-gray-800 dark:text-white">Hidden Fees</td>
+<td class="p-4 text-center bg-primary/5 font-medium text-gray-900 dark:text-white">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-lg">check_circle</span> None
+                                </div>
+</td>
+<td class="p-4 text-center text-gray-500">Fuel/Driver Extra</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white dark:bg-surface-dark border-b border-gray-100 dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Simple Process</span>
+<h2 class="text-3xl md:text-4xl font-display text-gray-900 dark:text-white">3 Easy Steps to <span class="italic text-primary">Book</span></h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center relative">
+<div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-100 dark:bg-gray-800 z-0"></div>
+<div class="relative z-10 group">
+<div class="w-24 h-24 mx-auto bg-background-light dark:bg-background-dark rounded-full flex items-center justify-center border-4 border-white dark:border-surface-dark shadow-soft mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-primary">directions_car</span>
+</div>
+<h3 class="text-xl font-bold mb-2 dark:text-white">1. Select Ride</h3>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark px-4">Choose from our premium value fleet of Vernas, Virtus, or Fortuners.</p>
+</div>
+<div class="relative z-10 group">
+<div class="w-24 h-24 mx-auto bg-background-light dark:bg-background-dark rounded-full flex items-center justify-center border-4 border-white dark:border-surface-dark shadow-soft mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-primary">check_circle</span>
+</div>
+<h3 class="text-xl font-bold mb-2 dark:text-white">2. Confirm Detail</h3>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark px-4">Enter your pickup details and get an instant confirmation.</p>
+</div>
+<div class="relative z-10 group">
+<div class="w-24 h-24 mx-auto bg-background-light dark:bg-background-dark rounded-full flex items-center justify-center border-4 border-white dark:border-surface-dark shadow-soft mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-primary">sentiment_satisfied</span>
+</div>
+<h3 class="text-xl font-bold mb-2 dark:text-white">3. Enjoy Ride</h3>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark px-4">Sit back and relax. Our professional driver will handle the rest.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Tailored For You</span>
+<h2 class="text-4xl font-display text-gray-900 dark:text-white">Our Service <span class="italic text-primary">Categories</span></h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="group relative rounded-2xl overflow-hidden h-96 shadow-lg cursor-pointer">
+<div class="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/30 transition-colors z-10"></div>
+<img alt="Scenic highway road for outstation travel" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMbC4BxOqU6Mkexxuo_MMZ-eVVU-8xL2AKyb5CL0-4dc8HDbeojMMoDDNfap5TZu2I3R3CHHS3dW4g0lRxEHP-ZVy7pD46t2MsriRj3diAJTAAlHys2sYIt7MIztgrega04cIWte0DcSM3rFAjjEo9WACjQYaw4DfqYh8jwPPYoJz8JpICQFpUIU18gXK5_BlKTlPFWXzVXWKmXkHUhWny6A4Cp9b3HKKYDmIEunz7pwQPl6Sy-zyWdUBVlW28KftgiTms4aKUqdg"/>
+<div class="absolute bottom-0 left-0 w-full p-8 z-20 bg-gradient-to-t from-black/80 to-transparent">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">map</span>
+<h3 class="text-2xl font-display font-bold text-white mb-2">Outstation</h3>
+<p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Perfect for weekend getaways and intercity business trips. Flat per-km rates.</p>
+</div>
+</div>
+<div class="group relative rounded-2xl overflow-hidden h-96 shadow-lg cursor-pointer">
+<div class="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/30 transition-colors z-10"></div>
+<img alt="Cityscape view for local rentals" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOXNLjOyslTBP3Zb1j4yRDUw_wmi73UkUbenOq9Ai43us1SCRkTCE_IF999LJrrU2ba_2z8nZwUG_I9pmKt5NGffJmekriaE8LeCJsy7aRD3js5OvndWWoS-Myb_ZdWlvaIJ-8Pevf2MnsjYe4QL_goTQaYi_jme9IwHCo-XsVvKkh_2B1uoUCaywOBiibp0ygUlhuYm-XA9veR554L0jiM-GNEz2vMicLIGRIUpLXkqTEzVP-TojslDqZmk-Ufp2FP2sWQuRckXw"/>
+<div class="absolute bottom-0 left-0 w-full p-8 z-20 bg-gradient-to-t from-black/80 to-transparent">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">watch_later</span>
+<h3 class="text-2xl font-display font-bold text-white mb-2">Local Rentals</h3>
+<p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Flexible hourly packages (4hr/40km, 8hr/80km) for city errands and meetings.</p>
+</div>
+</div>
+<div class="group relative rounded-2xl overflow-hidden h-96 shadow-lg cursor-pointer">
+<div class="absolute inset-0 bg-gray-900/40 group-hover:bg-gray-900/30 transition-colors z-10"></div>
+<img alt="Modern airport terminal architecture" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8609DgIRnHnsV2XV_jBQL6Dbps9JcfWhJqD5lzAQ2OiC_F_cpqCVo6xpPtMCkW1ODK3BmIUjL4X-a2D_pFnNfJQoj0wrepALXVuP7NJlkqZH0t37RBZdsXPw5NNDr_QKGg7xhIr45OaV6Hog721zU1jQNm2hWs9MacdaqC3lu9S0OUSdkzBSX_POtZJLGaebgGaxH0JmQpoZ_fRkahusIwfEpIU_cYAUARRCPAHJd9N2TR0woryKYJ5JgxM4oIzlEf1IKXUKAXTc"/>
+<div class="absolute bottom-0 left-0 w-full p-8 z-20 bg-gradient-to-t from-black/80 to-transparent">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">flight_takeoff</span>
+<h3 class="text-2xl font-display font-bold text-white mb-2">Airport Transfers</h3>
+<p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Reliable, on-time pickups and drops to ensure you never miss a flight.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-surface-dark" id="fleet">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Our Value Collection</span>
+<h2 class="text-4xl md:text-5xl font-display text-gray-900 dark:text-white">Premium <span class="italic text-primary">Value Fleet</span></h2>
+</div>
+<div class="flex items-center gap-2 bg-green-50 dark:bg-green-900/20 px-4 py-2 rounded-full border border-green-200 dark:border-green-800">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400 text-lg">verified_user</span>
+<span class="text-sm font-bold text-green-800 dark:text-green-300">No Hidden Charges Guaranteed</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-soft hover:shadow-card-hover transition-all duration-300 group flex flex-col border border-gray-100 dark:border-gray-800">
+<div class="relative overflow-hidden h-64">
+<img alt="Hyundai Verna new model side view" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuu9qHC-BdaAH1Cemxn9hY61EsXoxbmWyscmJcnQ1WF89-RBwyODST8oDqiT2zx2hA4G8JB9b8kRgcXmYdVAA6vJ9YHB0Gap9H7QuwSP0yOD11vs3xpd9trUbkzD8H4NgdcGvgd8mtvP51c4_Fqak6OM0bdEHkuMcBPiefo5qxaGxPM4bQ-dP1_J1o8NFSarlr1q96SzIqCLU5BYDDhd3nJfcol4sUlVOXEL8lBHUbY5mD32mTZ5zHAy4FBEjnhwayltVakzq4C5A"/>
+<div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">Best Seller</div>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark font-bold tracking-widest uppercase mb-1">Premium Sedan</p>
+<h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">Hyundai Verna</h3>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-6 flex items-center gap-4">
+<span><span class="material-symbols-outlined text-sm align-middle mr-1">person</span> 4 Pax</span>
+<span><span class="material-symbols-outlined text-sm align-middle mr-1">ac_unit</span> AC</span>
+<span><span class="material-symbols-outlined text-sm align-middle mr-1">local_gas_station</span> Diesel</span>
+</p>
+<div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-700">
+<div class="flex justify-between items-center mb-4">
+<div>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark">All Inclusive Price</p>
+<p class="text-xl font-bold text-gray-900 dark:text-white">₹2,500 <span class="text-xs font-normal text-text-sub-light dark:text-text-sub-dark">/ 8hrs</span></p>
+</div>
+<div class="text-right">
+<p class="text-xs text-green-600 font-bold">Save 40%</p>
+<p class="text-xs text-text-sub-light line-through">vs Luxury</p>
+</div>
+</div>
+<button class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-3 rounded-lg text-sm font-bold hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors">Book Now</button>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-soft hover:shadow-card-hover transition-all duration-300 group flex flex-col border border-gray-100 dark:border-gray-800">
+<div class="relative overflow-hidden h-64">
+<img alt="Volkswagen Virtus white" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmb6U29mz70zobJnRzOZR_iZ0cjUe802KBNFz3OcM0t_SjoZXs3C32gVPVIjq6E6E_-spnGSJPUJsENdT7ZiDS9UFz4Jw60l9KP3n3M9aAmSG3M6F8B0jo4QTmPJ9y29LzqW1FJEUxnFPSDTAuTqCCk3XUscVtn-tHfui6XPgIdln-U6KifuVeQYaMbR3D5bfp1NyE6WhzDxnOjZcIpl8s8lbUARjZphJG2prAfpWTbtgZE25AhaozEOW58QbkyhNaOaioBmPZVWc"/>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide backdrop-blur-sm dark:text-white">Top Rated</div>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark font-bold tracking-widest uppercase mb-1">German Engineering</p>
+<h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">Volkswagen Virtus</h3>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-6 flex items-center gap-4">
+<span><span class="material-symbols-outlined text-sm align-middle mr-1">person</span> 4 Pax</span>
+<span><span class="material-symbols-outlined text-sm align-middle mr-1">speed</span> TSI</span>
+<span><span class="material-symbols-outlined text-sm align-middle mr-1">luggage</span> 2 Bags</span>
+</p>
+<div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-700">
+<div class="flex justify-between items-center mb-4">
+<div>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark">All Inclusive Price</p>
+<p class="text-xl font-bold text-gray-900 dark:text-white">₹2,800 <span class="text-xs font-normal text-text-sub-light dark:text-text-sub-dark">/ 8hrs</span></p>
+</div>
+<div class="text-right">
+<p class="text-xs text-green-600 font-bold">Save 35%</p>
+<p class="text-xs text-text-sub-light line-through">vs Luxury</p>
+</div>
+</div>
+<button class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-3 rounded-lg text-sm font-bold hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors">Book Now</button>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-soft hover:shadow-card-hover transition-all duration-300 group flex flex-col border border-gray-100 dark:border-gray-800">
+<div class="relative overflow-hidden h-64">
+<img alt="Toyota Fortuner white SUV" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMeT0r2ssgRuQANhvOvADMs9SGg4YbH7iss51JQvTZp8gv7QQ3H2dMfb75txg28TkDnLeATfZOZ4Nzw2xzIGlsPfZwM-AVrWLghHJUqJd4sMkkEQTeHK0GFCdzbWyvqGuDRdS53fCXddq15ylSHzr-w4e2hvjlagmFfh93b0rcqE3PXE7eshKqUekvm0n_l0N05cwAZF2U_1fpOuOwToYx_Tz7grTVqpvxQMTOXvpBbWWkRHrj5ZIOnqL2Hjl6fumvc1q0RVGyarI"/>
+<div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">High Demand</div>
+<div class="absolute bottom-4 left-4 bg-red-600 text-white px-3 py-1 rounded text-xs font-bold uppercase flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-sm">schedule</span> Limited Availability
+                </div>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark font-bold tracking-widest uppercase mb-1">Premium SUV</p>
+<h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">Toyota Fortuner</h3>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm mb-6 flex items-center gap-4">
+<span><span class="material-symbols-outlined text-sm align-middle mr-1">person</span> 7 Pax</span>
+<span><span class="material-symbols-outlined text-sm align-middle mr-1">terrain</span> 4x4</span>
+<span><span class="material-symbols-outlined text-sm align-middle mr-1">luggage</span> 4 Bags</span>
+</p>
+<div class="mt-auto pt-6 border-t border-gray-100 dark:border-gray-700">
+<div class="flex justify-between items-center mb-4">
+<div>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark">All Inclusive Price</p>
+<p class="text-xl font-bold text-gray-900 dark:text-white">₹3,500 <span class="text-xs font-normal text-text-sub-light dark:text-text-sub-dark">/ 8hrs</span></p>
+</div>
+<div class="text-right">
+<p class="text-xs text-green-600 font-bold">Unbeatable</p>
+<p class="text-xs text-text-sub-light">Value</p>
+</div>
+</div>
+<button class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-3 rounded-lg text-sm font-bold hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors">Book Now</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark mb-4">Looking for something else?</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors" href="#contact">
+                Contact us for custom requirements <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface-light dark:bg-surface-dark relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl z-0"></div>
+<div class="absolute -left-20 bottom-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl z-0"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="glass-panel-deep p-8 md:p-12 rounded-3xl">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Safety First</span>
+<h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-6">50-Point Safety <span class="italic text-primary">Commitment</span></h2>
+<p class="text-text-sub-light dark:text-text-sub-dark mb-8 leading-relaxed">
+                        Your safety is our priority. Every Value Prime vehicle undergoes a rigorous 50-point inspection before every single trip. From tire pressure to brake fluid, we check it all so you don't have to.
+                    </p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined">car_crash</span>
+</div>
+<div>
+<h4 class="font-bold text-gray-900 dark:text-white">Mechanical Check</h4>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark">Brakes, Engine, Lights &amp; Fluid Levels</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined">cleaning_services</span>
+</div>
+<div>
+<h4 class="font-bold text-gray-900 dark:text-white">Hygiene Check</h4>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark">Deep Cleaning &amp; Sanitization</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined">how_to_reg</span>
+</div>
+<div>
+<h4 class="font-bold text-gray-900 dark:text-white">Driver Verification</h4>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark">Background Check &amp; Alcohol Screening</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative">
+<img alt="Car mechanic inspecting a white car" class="rounded-2xl shadow-lg relative z-10 w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGzmqzfpH4P58nwhiPRNNSXKiATZO2off9oMnllztvb-Or-EPdh3RrlHXGFoOBgDieuXgruOVML7DYNK-98wy5BXPeSNlFHgtYO8FIE4qtrEXQaos0gF34Vn9SXhQiIt40g_KCtKFhhCRIf-HVn_XaFqfJVX7BrJ7aw74jfLmH16g15nKuHlIVWPFASnFubzZqLofI2Bn7b9fEYwjShsgKq8QLCYzpMj22Y9OmZP3-DQOhGAZbymfLHcbOEPMrcyf8qRspW9Qw-o"/>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-xl flex items-center justify-center z-20 shadow-gold">
+<div class="text-center text-white">
+<span class="block text-3xl font-display font-bold">100%</span>
+<span class="text-xs uppercase font-bold tracking-wider">Safe</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 relative overflow-hidden">
+<div class="absolute inset-0 bg-gray-900">
+<img alt="Woman enjoying luxury service" class="w-full h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBrgqN7YzINJQ2RX6NIISrQMOZAZZyNhttD1RCo__selcXyZC8BKLaTMy2dAeqzbDqntdVMjh27N54JavSDssjkteJsaPfDn5BDtSBpJJYdWTzg2E47ea3A8csXj0VxVetdOXmkEMj3YXh27JfjC3kiskacmbja5G0Y1-6_kSecF_s6obztb0sCYmxTzrEbKCr6jUhB2it8AAvBnJKyRDnrtkdS0xQQ1LiK545BHHAmJ-B6ciaAXdd1NEpuMT8mlDeBLO2v0nUYqg"/>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+<h2 class="text-4xl md:text-6xl font-display font-bold text-white leading-tight mb-6">Experience Premium <br/><span class="italic text-primary">Without the Premium Price Tag</span></h2>
+<p class="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+            Join 1000+ satisfied customers who have switched to smart luxury. Clean cars, polite drivers, and transparent billing.
+        </p>
+<button class="bg-white text-gray-900 px-10 py-4 rounded-full font-bold shadow-gold hover:bg-primary hover:text-white transition-all transform hover:scale-105">Book Your Ride Now</button>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Common Questions</span>
+<h2 class="text-3xl font-display text-gray-900 dark:text-white">Frequently Asked <span class="italic text-primary">Questions</span></h2>
+</div>
+<div class="space-y-4">
+<details class="group bg-white dark:bg-surface-dark p-6 rounded-xl shadow-sm cursor-pointer border border-gray-100 dark:border-gray-800">
+<summary class="flex justify-between items-center font-bold text-gray-900 dark:text-white list-none">
+<span>Are there any hidden charges like driver allowance?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</span>
+</summary>
+<div class="text-text-sub-light dark:text-text-sub-dark mt-3 text-sm leading-relaxed faq-answer">
+                    Absolutely not. Our pricing is all-inclusive. What you see is what you pay. Driver allowance, fuel, and taxes are included in the quote. Tolls and parking are paid as per actuals.
+                </div>
+</details>
+<details class="group bg-white dark:bg-surface-dark p-6 rounded-xl shadow-sm cursor-pointer border border-gray-100 dark:border-gray-800">
+<summary class="flex justify-between items-center font-bold text-gray-900 dark:text-white list-none">
+<span>What is your cancellation policy?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</span>
+</summary>
+<div class="text-text-sub-light dark:text-text-sub-dark mt-3 text-sm leading-relaxed faq-answer">
+                    We offer free cancellation up to 6 hours before your scheduled pickup time. Plans change, and we understand that.
+                </div>
+</details>
+<details class="group bg-white dark:bg-surface-dark p-6 rounded-xl shadow-sm cursor-pointer border border-gray-100 dark:border-gray-800">
+<summary class="flex justify-between items-center font-bold text-gray-900 dark:text-white list-none">
+<span>Do you guarantee the specific car model?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</span>
+</summary>
+<div class="text-text-sub-light dark:text-text-sub-dark mt-3 text-sm leading-relaxed faq-answer">
+                    Yes. Unlike other aggregators, if you book a Volkswagen Virtus, you get a Volkswagen Virtus. We own our fleet to ensure quality and reliability.
+                </div>
+</details>
+<details class="group bg-white dark:bg-surface-dark p-6 rounded-xl shadow-sm cursor-pointer border border-gray-100 dark:border-gray-800">
+<summary class="flex justify-between items-center font-bold text-gray-900 dark:text-white list-none">
+<span>Is there a night charge for late drives?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</span>
+</summary>
+<div class="text-text-sub-light dark:text-text-sub-dark mt-3 text-sm leading-relaxed faq-answer">
+                    Our standard rates apply 24/7. However, for outstation trips that start or end between 11 PM and 6 AM, a nominal night allowance may be applicable for the driver's safety and effort.
+                </div>
+</details>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-surface-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Client Stories</span>
+<h2 class="text-4xl md:text-5xl font-display text-gray-900 dark:text-white">Trusted by <span class="italic text-primary">Many</span></h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-800 relative hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined absolute top-8 right-8 text-gray-200 dark:text-gray-700 text-5xl">format_quote</span>
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark italic mb-6 leading-relaxed relative z-10">"I used to book expensive luxury cars for my clients, but Value Prime's Virtus and Fortuner fleet offers the same comfort at half the price. The cars were spotless."</p>
+<div>
+<h5 class="font-bold text-gray-900 dark:text-white">Rajesh Khanna</h5>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark uppercase tracking-wider">Business Traveler</p>
+</div>
+</div>
+<div class="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-800 relative hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined absolute top-8 right-8 text-gray-200 dark:text-gray-700 text-5xl">format_quote</span>
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark italic mb-6 leading-relaxed relative z-10">"The Fortuner was perfect for our family trip to Lonavala. Spacious, powerful, and very affordable compared to other rentals. Highly recommended!"</p>
+<div>
+<h5 class="font-bold text-gray-900 dark:text-white">Meera Joshi</h5>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark uppercase tracking-wider">Family Trip</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-background-dark text-white pt-20 pb-10 border-t border-gray-800" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<img alt="Value Prime Logo" class="h-10 w-auto object-contain bg-white/10 rounded-full p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY1q-0timn_RGezkPO_CnlkGR6TUiALpxH5nH78crPdrqbwjSa8GLuaXEnk3VH3Uqv2HByUvHOH_0Zj9gKARCrygVyFdW6Zxjz9s5vnbAQI579E_BZZlqslqFzza3xtTKGitGN3F2uc_pX6gHvYccx-E5uBRUTkU9WwmJ7sJuWrhZSf6f0mVGWlcKJVQ8DSTe7Uep8TG_QLj8A8BpaSyj9mQ-ybfPsgUcqcxiMypUT1X9BJ1pd6LpYGH6lu6u3UUSt7Fre3-W32mA"/>
+<span class="font-display font-bold text-xl tracking-wide">Value Prime Cars</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-md">
+                    Pune's premier value car rental service. We bridge the gap between expensive luxury rentals and standard cabs. Experience automotive excellence at a price you deserve.
+                </p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6 font-display">Contact Us</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">call</span>
+<span>+91 9920053379</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">email</span>
+<span>care@valueprimecars.com</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">location_on</span>
+<span>Phoenix Market City, Viman Nagar, Pune, Maharashtra 411014</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6 font-display">Legal</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Refund Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+<p>© 2024 Value Prime Cars. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<a class="fixed bottom-8 right-8 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50 animate-bounce" href="https://wa.me/919920053379">
+<svg class="w-8 h-8 text-white fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+</a>
+</body></html>
