@@ -2,7 +2,7 @@ const fleet = [
     {
         badge: 'Best Seller',
         badgeClass: 'bg-primary text-white',
-        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDuu9qHC-BdaAH1Cemxn9hY61EsXoxbmWyscmJcnQ1WF89-RBwyODST8oDqiT2zx2hA4G8JB9b8kRgcXmYdVAA6vJ9YHB0Gap9H7QuwSP0yOD11vs3xpd9trUbkzD8H4NgdcGvgd8mtvP51c4_Fqak6OM0bdEHkuMcBPiefo5qxaGxPM4bQ-dP1_J1o8NFSarlr1q96SzIqCLU5BYDDhd3nJfcol4sUlVOXEL8lBHUbY5mD32mTZ5zHAy4FBEjnhwayltVakzq4C5A',
+        img: '/images/verna.jpeg',
         alt: 'Hyundai Verna new model side view',
         category: 'Premium Sedan',
         name: 'Hyundai Verna',
@@ -20,7 +20,7 @@ const fleet = [
     {
         badge: 'Top Rated',
         badgeClass: 'bg-white/90 dark:bg-black/80 dark:text-white',
-        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBmb6U29mz70zobJnRzOZR_iZ0cjUe802KBNFz3OcM0t_SjoZXs3C32gVPVIjq6E6E_-spnGSJPUJsENdT7ZiDS9UFz4Jw60l9KP3n3M9aAmSG3M6F8B0jo4QTmPJ9y29LzqW1FJEUxnFPSDTAuTqCCk3XUscVtn-tHfui6XPgIdln-U6KifuVeQYaMbR3D5bfp1NyE6WhzDxnOjZcIpl8s8lbUARjZphJG2prAfpWTbtgZE25AhaozEOW58QbkyhNaOaioBmPZVWc',
+        img: '/images/volkswagen.jpeg',
         alt: 'Volkswagen Virtus white',
         category: 'German Engineering',
         name: 'Volkswagen Virtus',
@@ -39,7 +39,7 @@ const fleet = [
         badge: 'High Demand',
         badgeClass: 'bg-primary text-white',
         limitedBadge: true,
-        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMeT0r2ssgRuQANhvOvADMs9SGg4YbH7iss51JQvTZp8gv7QQ3H2dMfb75txg28TkDnLeATfZOZ4Nzw2xzIGlsPfZwM-AVrWLghHJUqJd4sMkkEQTeHK0GFCdzbWyvqGuDRdS53fCXddq15ylSHzr-w4e2hvjlagmFfh93b0rcqE3PXE7eshKqUekvm0n_l0N05cwAZF2U_1fpOuOwToYx_Tz7grTVqpvxQMTOXvpBbWWkRHrj5ZIOnqL2Hjl6fumvc1q0RVGyarI',
+        img: '/images/fortuner.png',
         alt: 'Toyota Fortuner white SUV',
         category: 'Premium SUV',
         name: 'Toyota Fortuner',

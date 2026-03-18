@@ -60,6 +60,43 @@ export default function Footer() {
                 </div>
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                     <p>© 2026 Elite Prime Cars. All rights reserved.</p>
+                    
+                    {/* Credit Section */}
+                    <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-white/30 bg-white/15 shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300 mt-4 md:mt-0">
+                        <a
+                            href="https://fabulousmedia.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="rounded p-0.5 opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center hover:scale-110 transition-transform"
+                            aria-label="FabulousMedia"
+                        >
+                            <img
+                                src="/sitecredits/fabulous.png"
+                                alt="FabulousMedia"
+                                className="h-3 w-auto"
+                                loading="lazy"
+                                width="80"
+                                height="12"
+                            />
+                        </a>
+                        <div className="h-3 w-px bg-white/30 transition-colors duration-300"></div>
+                        <a
+                            href="https://gocommercially.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="rounded p-0.5 opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center hover:scale-110 transition-transform"
+                            aria-label="GoCommercially"
+                        >
+                            <img
+                                src="/sitecredits/gocomercially.svg"
+                                alt="GoCommercially"
+                                className="h-3 w-auto"
+                                loading="lazy"
+                                width="80"
+                                height="12"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
