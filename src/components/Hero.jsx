@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
 export default function Hero() {
-    const [activePref, setActivePref] = useState('Sedan');
-
     return (
         <header className="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden">
             {/* Background */}
@@ -77,87 +73,41 @@ export default function Hero() {
 
                 {/* Booking Form */}
                 <div className="w-full md:w-1/2 flex justify-center md:justify-end" id="booking-form">
-                    <div className="bg-black/70 backdrop-blur-xl p-6 lg:p-8 rounded-2xl w-full max-w-[420px] shadow-2xl border border-white/10 relative overflow-hidden">
-                        <div className="absolute top-4 right-4 flex items-center gap-1.5 bg-red-500/20 text-red-400 px-2 py-1 rounded text-[10px] font-bold border border-red-500/20 animate-pulse">
-                            <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
-                            Real-time Booking Active
+                    <div className="bg-black/70 backdrop-blur-xl rounded-2xl w-full max-w-[420px] shadow-2xl border border-white/10 relative overflow-hidden">
+                        {/* Form Header */}
+                        <div className="px-6 lg:px-8 pt-6 lg:pt-8 pb-3">
+                            <div className="absolute top-4 right-4 flex items-center gap-1.5 bg-red-500/20 text-red-400 px-2 py-1 rounded text-[10px] font-bold border border-red-500/20 animate-pulse">
+                                <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                                Real-time Booking Active
+                            </div>
+                            <h3 className="text-2xl font-display font-bold mb-2 text-white">
+                                Book Your Ride
+                            </h3>
+                            <p className="text-sm text-gray-300">
+                                Best rates guaranteed. No hidden fees.
+                            </p>
                         </div>
-                        <h3 className="text-2xl font-display font-bold mb-2 text-white">
-                            Book Your Ride
-                        </h3>
-                        <p className="text-sm text-gray-300 mb-6">
-                            Best rates guaranteed. No hidden fees.
-                        </p>
-                        <form className="space-y-4">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label className="block text-[10px] uppercase tracking-wider text-gray-400 mb-1 font-bold">
-                                        Pick Up
-                                    </label>
-                                    <div className="relative">
-                                        <span className="material-symbols-outlined absolute left-3 top-3 text-gray-400 text-sm">
-                                            location_on
-                                        </span>
-                                        <input
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-9 pr-4 py-2.5 text-sm focus:ring-primary focus:border-primary text-white placeholder-gray-500 shadow-sm outline-none transition-all"
-                                            placeholder="City or Airport"
-                                            type="text"
-                                        />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label className="block text-[10px] uppercase tracking-wider text-gray-400 mb-1 font-bold">
-                                        Drop Off
-                                    </label>
-                                    <div className="relative">
-                                        <span className="material-symbols-outlined absolute left-3 top-3 text-gray-400 text-sm">
-                                            flag
-                                        </span>
-                                        <input
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-9 pr-4 py-2.5 text-sm focus:ring-primary focus:border-primary text-white placeholder-gray-500 shadow-sm outline-none transition-all"
-                                            placeholder="Destination"
-                                            type="text"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <label className="block text-[10px] uppercase tracking-wider text-gray-400 mb-1 font-bold">
-                                    Date &amp; Time
-                                </label>
-                                <input
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-sm focus:ring-primary focus:border-primary text-white placeholder-gray-500 shadow-sm outline-none transition-all [color-scheme:dark]"
-                                    type="datetime-local"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-[10px] uppercase tracking-wider text-gray-400 mb-2 font-bold">
-                                    Select Preference
-                                </label>
-                                <div className="grid grid-cols-3 gap-2">
-                                    {['Sedan', 'SUV', 'Outstation'].map((pref) => (
-                                        <button
-                                            key={pref}
-                                            type="button"
-                                            onClick={() => setActivePref(pref)}
-                                            className={`text-xs font-bold py-2.5 rounded-lg transition-all ${activePref === pref
-                                                ? 'bg-primary text-white shadow-gold border border-primary'
-                                                : 'bg-white/5 border border-white/10 text-gray-300 hover:border-primary/50'
-                                                }`}
-                                        >
-                                            {pref}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
-                            <button
-                                className="w-full bg-white text-black font-bold py-3.5 rounded-lg mt-6 hover:bg-gray-100 transition-colors flex justify-center items-center gap-2 shadow-lg"
-                                type="submit"
-                            >
-                                Check Availability &amp; Prices{' '}
-                                <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                            </button>
-                        </form>
+                        
+                        {/* Embedded Form */}
+                        <div className="px-6 lg:px-8 pb-6 lg:pb-8">
+                            <iframe
+                                src="https://link.on.bingo/widget/form/f7kGu7G4YdSqDp4wjwIg"
+                                style={{ width: '100%', height: '580px', border: 'none' }}
+                                id="inline-f7kGu7G4YdSqDp4wjwIg"
+                                data-layout="{'id':'INLINE'}"
+                                data-trigger-type="alwaysShow"
+                                data-trigger-value=""
+                                data-activation-type="alwaysActivated"
+                                data-activation-value=""
+                                data-deactivation-type="neverDeactivate"
+                                data-deactivation-value=""
+                                data-form-name="Value Car"
+                                data-height="580"
+                                data-layout-iframe-id="inline-f7kGu7G4YdSqDp4wjwIg"
+                                data-form-id="f7kGu7G4YdSqDp4wjwIg"
+                                title="Value Car"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
