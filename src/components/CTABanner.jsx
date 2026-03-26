@@ -17,7 +17,10 @@ export default function CTABanner() {
                     Join 1000+ satisfied customers who have switched to smart luxury. Clean cars, polite
                     drivers, and transparent billing.
                 </p>
-                <button className="bg-white text-gray-900 px-10 py-4 rounded-full font-bold shadow-gold hover:bg-primary hover:text-white transition-all transform hover:scale-105">
+                <button 
+                    onClick={() => window.location.href = '#booking-form'}
+                    className="bg-white text-gray-900 px-10 py-4 rounded-full font-bold shadow-gold hover:bg-primary hover:text-white transition-all transform hover:scale-105"
+                >
                     Book Your Ride Now
                 </button>
             </div>
