@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <header className="relative min-h-screen flex items-center justify-center pt-20 sm:pt-24 pb-8 sm:pb-12 overflow-hidden">
+        <header className="relative min-h-screen flex items-center justify-center pt-36 sm:pt-44 pb-8 sm:pb-12 overflow-hidden">
             {/* Background */}
             <div className="absolute inset-0 z-0">
                 <img
